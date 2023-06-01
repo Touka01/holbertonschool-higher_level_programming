@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
 import random
+
+# Generate a random signed number
 number = random.randint(-10000, 10000)
 
 # Get the last digit of the number
