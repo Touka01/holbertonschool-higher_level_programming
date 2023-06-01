@@ -18,4 +18,3 @@ elif last_digit > 5:
     message += 'is greater than 5'
 else:
     message += 'is less than 6 and not 0'
-    
