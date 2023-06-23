@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module 11-student
+Module 9-student
 
 Contains class Student
 that initializes public instance attributes first_name, last_name, and age,
