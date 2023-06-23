@@ -15,20 +15,17 @@ Contains function that adds and saves to Python obj to JSON file; loads objects
 
 """
 
-import os.path
-import subprocess
-from sys import argv
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
+"""script that adds all arguments to a Python list"""
 
-filename = "add_item.json"
+file = "add_item.json"
+json_list = []
 
-if os.path.isfile(filename):
-    existing_content = load_from_json_file(filename)
-else:
-    existing_content = []
+if os.path.exists(file):
+    json_list = load_from_json_file(file)
 
-save_to_json_file(existing_content + argv[1:], filename)
+for i in range(1, len(sys.argv)):
+    json_list.append(sys.argv[i])
 
-subprocess.run(['cat', filename])
-print("")
+save_to_json_file(json_list, file)
