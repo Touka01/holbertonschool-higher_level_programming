@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# models/base.py
 
 import json
 import csv
