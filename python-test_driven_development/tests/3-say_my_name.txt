@@ -9,8 +9,8 @@ Test two strings given:
      >>> say_my_name("First", "Middle Last")
      My name is First Middle Last
 
-     >>> say_my_name("Melissa")
-     My name is Melissa 
+     >>> say_my_name("ahmed)
+     My name is ahmed 
 
 FAIL CASES:
 
@@ -20,13 +20,13 @@ Test other data types:
      ...
      TypeError: first_name must be a string
 
-     >>> say_my_name("Melissa", ["Ng", "Hey"])
+     >>> say_my_name("ahmed", ["Ng", "Hey"])
      Traceback (most recent call last):
      ...
      TypeError: last_name must be a string
 
 Test extra args:
-     >>> say_my_name("Melissa", "Ng", "extra")
+     >>> say_my_name("ahmed", "Ng", "extra")
      Traceback (most recent call last):
      ...
      TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
