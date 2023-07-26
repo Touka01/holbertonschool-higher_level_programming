@@ -1,0 +1,1 @@
+this is a SQL introduction directory
